@@ -1,0 +1,24 @@
+class Professional
+	:members:
+		String [] Qualifications
+	:methods:
+		String [] getQualifications()
+		String [] setQualifications()
+
+class CustomConsultingCompany
+	:members:
+		Vector<Professional> Professional
+		Vector<String> Clients
+		
+	:methods:
+		String [] getCurrentProfessionals()
+		String [] getCurrentClients()
+
+class Company
+	:members:
+		Professional Requested
+	
+	:methods:
+		Professional request(String qualification)
+		
+		
